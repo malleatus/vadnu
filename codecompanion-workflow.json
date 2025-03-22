@@ -1,0 +1,81 @@
+{
+  "name": "vadnu",
+  "version": "1.0.0",
+  "system_prompt": "You are an assistant for the Vadnu personal knowledge management (PKM) system created by @hjdivad and @rwjblue. Vadnu (meaning 'what now?' in Swedish) is a system for organizing information, tracking projects, documenting relationships, and determining next actions. The system uses a specific folder structure:\n- projects/ - for trackable initiatives that can end\n- ref/ - for reference information and knowledge\n- ref/p/ - for information about people\n- someday/ - for brainstorming future ideas\n- TODO.md - for tracking immediate tasks\n\nThe system uses specific marks for navigation and has conventions for document structure. Help the user understand the system or contribute to its documentation and development.",
+  "groups": [
+    {
+      "name": "Documentation Site",
+      "system_prompt": "You are helping with the Vadnu documentation site built with VitePress. This site will document how the Vadnu personal knowledge management system works, including its folder structure, organizational principles, marks system, and practical usage. The documentation is currently in early stages with default VitePress content that needs to be expanded with actual Vadnu-specific documentation. Provide assistance with VitePress configuration, markdown content creation, theme customization, and deployment strategies.",
+      "data": [
+        "docs_config",
+        "docs_theme",
+        "docs_style",
+        "docs_index",
+        "docs_markdown_examples",
+        "docs_api_examples",
+        "docs_package",
+        "docs_package_lock"
+      ]
+    },
+    {
+      "name": "Developer Workflows",
+      "system_prompt": "You are helping with the development workflows for Vadnu implemented using mise tasks. These workflows include tasks for running the documentation development server, installing dependencies, and other development operations. The mise tasks are defined in TOML format in the mise config file. Help the user understand how to create new tasks, run existing tasks, or modify the workflow configuration. Provide guidance on automation best practices and tooling setup.",
+      "data": [
+        "mise_config",
+        "readme"
+      ]
+    }
+  ],
+  "data": {
+    "mise_config": {
+      "type": "file",
+      "path": ".config/mise/config.toml",
+      "description": "Configuration for development tasks using mise. Contains tasks for running the documentation development server and installing dependencies. Tasks include docs:dev, docs:preview, and install commands."
+    },
+    "readme": {
+      "type": "file",
+      "path": "README.md",
+      "description": "Overview of the Vadnu PKM system, including explanation of the name, folder structure, organizational principles, and the marks system used for navigation. Provides detailed information about the different sections like Projects, References, and Someday."
+    },
+    "docs_config": {
+      "type": "file",
+      "path": "docs/.vitepress/config.mts",
+      "description": "VitePress configuration for the documentation site, including site title, description, navigation menu structure, sidebar configuration, and social links."
+    },
+    "docs_theme": {
+      "type": "file",
+      "path": "docs/.vitepress/theme/index.ts",
+      "description": "Custom theme configuration for the documentation site extending the default VitePress theme. Currently using the default theme with minimal customization."
+    },
+    "docs_style": {
+      "type": "file",
+      "path": "docs/.vitepress/theme/style.css",
+      "description": "Custom CSS styling for the documentation site, including color variables, button styling, home page hero section, and component customization."
+    },
+    "docs_index": {
+      "type": "file",
+      "path": "docs/index.md",
+      "description": "Homepage of the documentation site with hero section and feature highlights. Currently using default VitePress structure that needs to be customized for Vadnu."
+    },
+    "docs_markdown_examples": {
+      "type": "file",
+      "path": "docs/markdown-examples.md",
+      "description": "Example markdown content demonstrating VitePress markdown extensions like syntax highlighting, line highlighting, and custom containers (info, tip, warning, danger, details)."
+    },
+    "docs_api_examples": {
+      "type": "file",
+      "path": "docs/api-examples.md",
+      "description": "Examples of using VitePress runtime APIs for accessing site, theme, and page data within Vue components embedded in markdown content."
+    },
+    "docs_package": {
+      "type": "file",
+      "path": "docs/package.json",
+      "description": "NPM package configuration for the documentation site with scripts for development (docs:dev), building (docs:build), and previewing (docs:preview). Defines VitePress as a development dependency."
+    },
+    "docs_package_lock": {
+      "type": "file",
+      "path": "docs/package-lock.json",
+      "description": "Automatically generated file that locks the exact versions of npm dependencies for the documentation site, ensuring consistent installations across environments."
+    }
+  }
+}
