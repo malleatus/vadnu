@@ -3,6 +3,12 @@
 [tools]
 node = "22"
 
+[tasks."docs:build"]
+description = "Build the documentation site"
+dir = "docs"
+depends = ["install:docs"]
+run = "npm run docs:build"
+
 [tasks."docs:dev"]
 description = "Run the documentation dev server"
 dir = "docs"

@@ -5,6 +5,9 @@ export default defineConfig({
   title: "Vadnu Docs",
   description:
     "What now? A repo for supporting and documenting the personal knowledge management system for [@hjdivad](https://github.com/hjdivad) and [@rwjblue](https://github.com/rwjblue).",
+  lang: "en-US",
+  cleanUrls: true,
+  base: "/vadnu/",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
