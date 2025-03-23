@@ -2,3 +2,26 @@
 
 [tools]
 node = "22"
+
+[tasks."docs:dev"]
+description = "Run the documentation dev server"
+dir = "docs"
+depends = ["install:docs"]
+run = "npm run docs:dev"
+
+[tasks."docs:preview"]
+description = "Run the documentation preview server"
+dir = "docs"
+depends = ["install:docs"]
+run = "npm run docs:preview"
+
+[tasks.install]
+alias = ['i']
+depends = ["install:*"]
+
+[tasks."install:docs"]
+description = "Install the dependencies for `docs/`"
+dir = "docs"
+sources = ["package.json"]
+outputs = ["package-lock.json"]
+run = "npm install"
