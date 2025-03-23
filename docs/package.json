@@ -6,6 +6,7 @@
     "docs:preview": "vitepress preview ."
   },
   "devDependencies": {
+    "prettier": "^3.5.3",
     "vitepress": "^1.6.3"
   }
 }
