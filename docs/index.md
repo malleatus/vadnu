@@ -19,8 +19,9 @@ home
 └── TODO.md
 ```
 
-- [/projects](/structure/projects) - Things that "can end" like work projects or meetings
-- [ref/](/structure/references) - Reference information you want to remember
-- [ref/p/](/structure/references-people) - Facts about people, promises made, and meeting notes
-- [someday/](/structure/someday) - Brainstorming and future project ideas
-- [TODO.md](/structure/todo) - Immediate tasks and action items
+- [/ARCHIVE/](/structure/archive) - Completed projects, references, &c that are no longer active
+- [/projects/](/structure/projects) - Things that "can end" like work projects or meetings
+- [/ref/](/structure/references) - Reference information you want to remember
+- [/ref/p/](/structure/references-people) - Facts about people, promises made, and meeting notes
+- [/someday/](/structure/someday) - Brainstorming and future project ideas
+- [/TODO.md](/structure/todo) - Immediate tasks and action items

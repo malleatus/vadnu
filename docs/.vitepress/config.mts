@@ -17,6 +17,7 @@ export default defineConfig({
 
     sidebar: [
       { text: "Introduction", link: "/" },
+      { text: "Getting Started", link: "/getting-started" },
       {
         text: "Structure",
         collapsed: false,
@@ -25,6 +26,24 @@ export default defineConfig({
           { text: "References", link: "/structure/references" },
           { text: "Someday", link: "/structure/someday" },
           { text: "TODO.md", link: "/structure/todo" },
+        ],
+      },
+      {
+        text: "Workflows",
+        collapsed: false,
+        items: [
+          { text: "Daily", link: "/workflows/daily" },
+          { text: "Weekly", link: "/workflows/weekly" },
+          { text: "Quarterly", link: "/workflows/quarterly" },
+          { text: "Yearly", link: "/workflows/yearly" },
+        ],
+      },
+      {
+        text: "Tools",
+        collapsed: false,
+        items: [
+          { text: "Obsidian", link: "/tools/obsidian" },
+          { text: "Neovim", link: "/tools/neovim" },
         ],
       },
       { text: "Usage", link: "/usage" },
